@@ -1,5 +1,5 @@
 # Handwritten-numbers-vision-recognition-neural-net
-This repository contains a WPF program for recognizing handwritten number from the MNIST database. It uses a deeplearning algorithm with a minibatch gradient decent build from scratch
+This repository contains a WPF program for recognizing handwritten number from the MNIST database. It uses a deeplearning neural network with a minibatch gradient decent build from scratch
 
 There are 60.000 numbers available for training and 10.000 for testing
 
