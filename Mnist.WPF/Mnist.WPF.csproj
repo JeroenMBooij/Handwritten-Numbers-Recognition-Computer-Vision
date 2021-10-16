@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="background.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="background.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="19.3.0.45" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mnist.Logic\Mnist.Logic.csproj" />
+  </ItemGroup>
+
+</Project>
