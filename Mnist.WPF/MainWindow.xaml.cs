@@ -163,7 +163,7 @@ namespace Mnist.WPF
                 Task.Run(() =>
                 {
                     for (int i = 0; i < NetworkVM.Epochs; i++)
-                        _network.TrainNetworkMiniBatchWise(UpdateProgressBar);
+                        _network.TrainNetworkMiniBatchGradientDescent(UpdateProgressBar);
 
                     Dispatcher.BeginInvoke(new UpdateVisibilityCallback(UpdateProgressVisibility), Visibility.Collapsed);
 

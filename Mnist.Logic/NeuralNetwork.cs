@@ -16,9 +16,12 @@ namespace Mnist.Logic
         //The learning factor èta.
         public double ETA { get; set; } = 3.0;
 
-        private const int n0 = 784;                         //Amount of input-neuronen (layer 0).
-        private const int n1 = 12;                          //Amount of hidden neuronen (layer 1).
-        private const int n2 = 10;                          //Amount of output-neuronen (layer 2).
+        //Amount of input-neuronen (layer 0).
+        private const int n0 = 784;
+        //Amount of hidden neuronen (layer 1).
+        private const int n1 = 12;
+        //Amount of output-neuronen (layer 2).
+        private const int n2 = 10;                         
 
         #endregion
 
@@ -123,7 +126,7 @@ namespace Mnist.Logic
         #endregion
 
 
-        public void TrainNetworkMiniBatchWise(Action<int> UpdateCallback)
+        public void TrainNetworkMiniBatchGradientDescent(Action<int> UpdateCallback)
         {
             _training = true;
 
